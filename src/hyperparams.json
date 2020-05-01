@@ -1,0 +1,23 @@
+{
+	"comment" : "Settings for Target Model", 
+
+	"target_dataset" : "HighResolution", 
+	"target_learning_rate" : 0.001, 
+	"target_model_epochs" : 50, 
+
+
+
+	"comment" : "Settings for AdvGAN", 
+
+	"AdvGAN_epochs" : 60, 
+	"AdvGAN_learning_rate" : 0.001, 
+	"maximum_perturbation_allowed" : "Auto", 
+	"alpha" : 5, 
+	"beta" : 1, 
+	"gamma" : 1, 
+	"kappa" : 0, 
+	"c" : 0.1, 
+	"D_number_of_steps_per_batch" : 1, 
+	"G_number_of_steps_per_batch" : 1, 
+	"is_relativistic" : "True"
+}
