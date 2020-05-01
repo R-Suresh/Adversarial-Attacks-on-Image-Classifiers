@@ -7,7 +7,7 @@ Adversarial examples are a very exciting ascpect of Deep Learning! This repo con
 [AdvGAN](https://arxiv.org/abs/1801.02610) model for MNIST, CIFAR-10 and the 
 [NIPS 2017 Adversarial Learning challenges dataset](https://www.kaggle.com/google-brain/nips-2017-adversarial-learning-development-set). 
 
-I've also adapted the [Relativistic Average LSGAN (RaLSGAN)](https://arxiv.org/abs/1807.00734) and shown that it is able to 
+We have also adapted the [Relativistic Average LSGAN (RaLSGAN)](https://arxiv.org/abs/1807.00734) and shown that it is able to 
 increase the performance of the original AdvGAN both in terms of accuracy and perceptual similarity of the adversarial 
 examples to the original ones. 
 
@@ -21,13 +21,13 @@ examples to the original ones.
 | CIFAR-10 *(black-box)*           | Secret Model         | -              | 86.60%                  | **86.33%** |
 | HighResolution *(semi white-box)*| Inception v3         | **0%**         | 70%                     | 70%        |
 
-*Note 1 : I haven't implemented the distillation techniques for the black-box attacks and I believe that this is a big part of the reason for the performance difference between the original paper and my implementation.*
+*Note 1 : We haven't implemented the distillation techniques for the black-box attacks and we believe that this is a big part of the reason for the performance difference between the original paper and my implementation.*
 
 *Note 2: The score of Inception v3 on pristine data was ~95%.*
 
-*Note 3: My guess for the scores for HighResolution being suboptimal is that the authors of the AdvGAN paper either
+*Note 3: Our guess for the scores for HighResolution being suboptimal is that the authors of the AdvGAN paper either
 trained the AdvGAN also on data from ImageNet or they trained the target Inception v3 model from scratch only on the NIPS 2017 
-Adversarial Learning challenges dataset; I plan to work on that in the future.*
+Adversarial Learning challenges dataset; we plan to work on that in the future.*
 
 ![mnist](https://github.com/GiorgosKarantonis/Adversarial-Attacks/blob/master/img/mnist.png)
 
@@ -78,7 +78,7 @@ loss. Otherwise, the training will be on the Least Squares objective as in the o
 
 To run the code simply specify the hyperparameters you want and run `python3 main.py`. 
 
-Since I haven't uploaded the checkpoints for the target models, this will first train the target you specified in the 
+Since we haven't uploaded the checkpoints for the target models, this will first train the target you specified in the 
 `hyperparameters.json` and then the AdvGAN (or the AdvRaLSGAN if you set `is_relativistic=True`). 
 
 All the losses and the produced adversarial examples are now saved in the new folder `src/results`. 
@@ -99,7 +99,7 @@ When you're done, follow the same steps as for MNIST and CIFAR-10.
 ### How to test on the MadryLab Challenges
 MadryLab has created challenges for Adversarial Attacks for both the [MNIST](https://github.com/MadryLab/mnist_challenge) 
 and the [CIFAR-10](https://github.com/MadryLab/cifar10_challenge) dataset. Because their implementation is in Tensorflow, 
-I've modified the `run_attack.py` file to also work with the outputs of this PyTorch repo. 
+we have modified the `run_attack.py` file to also work with the outputs of this PyTorch repo. 
 
 #### In order to setup the challenges
 
