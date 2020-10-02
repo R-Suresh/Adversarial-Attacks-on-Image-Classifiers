@@ -29,9 +29,9 @@ examples to the original ones.
 trained the AdvGAN also on data from ImageNet or they trained the target Inception v3 model from scratch only on the NIPS 2017 
 Adversarial Learning challenges dataset; we plan to work on that in the future.*
 
-![mnist](https://github.com/GiorgosKarantonis/Adversarial-Attacks/blob/master/img/mnist.png)
+![mnist](/img/mnist.png)
 
-![high_res](https://github.com/GiorgosKarantonis/Adversarial-Attacks/blob/master/img/high_res.png)
+![high_res](/img/high_res.png)
 
 ## Overview
 
