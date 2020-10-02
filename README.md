@@ -3,7 +3,12 @@
 
 ## Introduction
 
-Adversarial examples are a very exciting ascpect of Deep Learning! This repo contains a PyTorch implementation of the 
+Adversarial examples are a very exciting ascpect of Deep Learning! The image below showcases an adversarial image example which causes misclassification with a high degree of confindence. 
+
+![Adversarial example](/img/example.png)
+
+
+This repo contains a PyTorch implementation of the 
 [AdvGAN](https://arxiv.org/abs/1801.02610) model for MNIST, CIFAR-10 and the 
 [NIPS 2017 Adversarial Learning challenges dataset](https://www.kaggle.com/google-brain/nips-2017-adversarial-learning-development-set). 
 
